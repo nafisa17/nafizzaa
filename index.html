@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>Nafisa Anjum | Personal Website</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    html, body {
       margin: 0;
       padding: 0;
-      background-image: url('bg.jpg'); 
+      overflow-x: auto; /* Enable horizontal scroll if needed */
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-image: url('bg.jpg');
       background-size: cover;
       background-attachment: fixed;
+      background-position: center;
       color: #333;
     }
+
     .container {
+      min-width: 320px;
       max-width: 900px;
       margin: 20px auto;
       padding: 20px;
@@ -22,53 +29,72 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
+
     header {
       text-align: center;
       padding-bottom: 20px;
     }
+
     header h1 {
       margin: 0;
       font-size: 2.5em;
       color: #2c3e50;
     }
+
     header p {
       margin: 5px 0;
-      font-size: 1.2em;
+      font-size: 1.1em;
       color: #34495e;
     }
+
     nav {
       text-align: center;
       margin-bottom: 20px;
+      overflow-x: auto;
     }
+
     nav a {
+      display: inline-block;
       margin: 0 15px;
       text-decoration: none;
       color: #2980b9;
       font-size: 1.1em;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     section {
       margin-bottom: 20px;
     }
+
     h2 {
       color: #2c3e50;
       border-bottom: 2px solid #ecf0f1;
       padding-bottom: 5px;
     }
+
     ul {
       list-style-type: none;
       padding: 0;
     }
+
     ul li {
       margin-bottom: 10px;
     }
+
     footer {
       text-align: center;
       padding: 10px 0;
       font-size: 0.9em;
       color: #7f8c8d;
+    }
+
+    @media screen and (orientation: landscape) and (max-height: 500px) {
+      body {
+        overflow-x: scroll;
+      }
     }
   </style>
 </head>
@@ -77,8 +103,10 @@
   <div class="container">
     <header>
       <h1>Nafisa Anjum</h1>
-      <p>Computer Science Graduate | Experienced in Natural Language Processing and Data Analysis</p>
-      <p>Email: your.email@example.com | GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
+      <p>Computer Science Graduate | NLP & Data Analysis Enthusiast</p>
+      <p>Email: your.email@example.com | 
+         GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a>
+      </p>
     </header>
 
     <nav>
@@ -91,62 +119,33 @@
     <section id="education">
       <h2>Education</h2>
       <ul>
-        <li>
-          <strong>Technische Universität Dresden</strong> - Master's in Computer Science
-          <br>Year of Graduation: [Your Graduation Year]
-        </li>
-        <li>
-          <strong>[Your Previous University]</strong> - Bachelor's in [Your Major]
-          <br>Year of Graduation: [Your Graduation Year]
-        </li>
+        <li><strong>Technische Universität Dresden</strong> – Master’s in Computer Science</li>
       </ul>
     </section>
 
     <section id="experience">
       <h2>Experience</h2>
       <ul>
-        <li>
-          <strong>Katana Labs</strong> - [Your Position]
-          <br>[Month Year] – [Month Year]
-          <br>Responsibilities:
-          <ul>
-            <li>Handled unprocessed text and developed natural language processing models.</li>
-            <li>Collaborated with cross-functional teams to enhance data analysis processes.</li>
-            <li>Implemented machine learning algorithms for predictive analytics.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>[Previous Company]</strong> - [Your Position]
-          <br>[Month Year] – [Month Year]
-          <br>Responsibilities:
-          <ul>
-            <li>[Responsibility 1]</li>
-            <li>[Responsibility 2]</li>
-            <li>[Responsibility 3]</li>
-          </ul>
-        </li>
+        <li><strong>Katana Labs</strong> – NLP Intern</li>
       </ul>
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
       <ul>
-        <li>Programming Languages: Python, Java, C++</li>
-        <li>Frameworks: TensorFlow, PyTorch</li>
-        <li>Tools: Git, Docker, Kubernetes</li>
-        <li>Areas: Natural Language Processing, Data Analysis, Machine Learning</li>
+        <li>Python, R, C++</li>
+        <li>Natural Language Processing, Deep Learning</li>
       </ul>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
       <p>Email: your.email@example.com</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/nafisaanjum/" target="_blank">linkedin.com/in/nafisaanjum/</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/nafisaanjum/" target="_blank">linkedin.com/in/nafisaanjum</a></p>
     </section>
 
     <footer>
-      <p>&copy; [Current Year] Nafisa Anjum. All rights reserved.</p>
+      <p>&copy; 2025 Nafisa Anjum. All rights reserved.</p>
     </footer>
   </div>
 
